@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Owuor | Data Analyst Portfolio</title>
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+    background:#0b1120;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+nav h2{
+    color:#f43f5e;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#f43f5e;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#f43f5e;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+    color:#ccc;
+}
+
+/* SECTION GENERAL */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:32px;
+    margin-bottom:40px;
+    color:#f43f5e;
+}
+
+/* ABOUT */
+.about-content{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.about-text{
+    flex:1;
+}
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+    margin-right:15px;
+    font-size:20px;
+    color:white;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#f43f5e;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#f43f5e;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:15px;
+    text-align:center;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact-form{
+    max-width:600px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+.contact-form button{
+    padding:10px 20px;
+    background:#f43f5e;
+    border:none;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b1120;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .about-content{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Joy</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Joy Owuor</h1>
+    <p>Business Intelligence & Data Analyst</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>
+                I am a passionate Business Intelligence and Data Analyst skilled in SQL, Excel, and Power BI. 
+                I transform raw data into actionable insights that drive strategic decisions.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="mailto:yourmail@email.com"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <a href="yourcv.pdf" download class="btn">Download CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Post-Harvest Loss Dashboard</h3>
+            <p>Power BI dashboard analyzing crop spoilage, logistics, and revenue loss.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Goodreads Review Analysis</h3>
+            <p>Data cleaning and visualization of book ratings and trends.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Sales Performance Analysis</h3>
+            <p>Multi-table SQL and BI project tracking KPIs and targets.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Power BI</div>
+        <div class="skill-box">Excel</div>
+        <div class="skill-box">Data Cleaning</div>
+        <div class="skill-box">Dashboard Design</div>
+        <div class="skill-box">Business Analysis</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Contact</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Joy Owuor | Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
